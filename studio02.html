@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>002</title>
+    <style type="text/css">
+        table, th, td {
+        border: 1px solid black;
+        background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    @include('partials.navbar')
+    <div class="box1" style="width: 75%;
+        height: 500px;
+        margin-top:20px;
+        margin-bottom:20px;
+        left:200px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(245, 0, 0);
+        position: absolute;
+        z-index:-1;">
+        <div class="box2" style="width:100%;
+            height: 80px;
+            
+            left:0px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(166, 166, 166);
+            position: absolute;">
+                <h1>Customer Data</h1>
+            </div>
+            <!--box3-->
+            <div style="width: 90%;
+            height: 400px;
+            margin-top:90px;
+            margin-bottom:20px;
+            left:50px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(0, 0, 0);
+            position: absolute;
+            z-index:-1;"> 
+               <div style="position:absolute; margin-left:270px;">
+                <h3 style=" position:absolute; margin-top:10px; margin-left:-550px;margin-right:150px ">nama pengguna</h3>
+                <input 
+                        type="text"
+                        placeholder=""
+                        class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+                        style="height:20px; position:absolute; margin-top:10px;margin-left:-400px"
+                        />
+                </div>
+                <div style="position:absolute; margin-left:270px; margin-top:10px">
+                    <label for="band"style=" position:absolute; margin-top:30px; margin-left:-550px;margin-right:150px ">genre band</label>
+                <input 
+                        type="number"
+                        id="tentacles"
+                        name="tentacles"
+                        min="0"
+                        max="24"
+                        class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+                        style="height:20px; width:30px position:absolute; margin-top:30px;margin-left:-400px"
+                        />
+                        <h3 style="position: absolute; margin-top:-25px; margin-left:-320px">hours</h3>
+                </div>
+                <div style="position:absolute; margin-left:270px; margin-top:40px">
+                    <label for="band"style=" position:absolute; margin-top:30px; margin-left:-550px;margin-right:150px ">genre band</label>
+                <input 
+                        type="text"
+                        placeholder=""
+                        class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+                        style="height:20px; width:30px position:absolute; margin-top:30px;margin-left:-400px"
+                        />
+                        <button type="button" class=" rounded-md px-4 py-3" style=" position:absolute;width:60px; height:25px; margin-top:30px; margin-left:5px;">
+                          
+                            <h5 style="position: absolute; margin-top:-5px">calculate</h5>
+                        
+                        </button>
+                </div>
+                <div style="position:absolute; margin-left:-700px; margin-top:100px;">
+                    <label for="band" style="margin-left:-60px; margin-top:-20px;">genre band</label>
+                    <select id="band" name="genre band" form="bandform" style="height:30px; position:absolute; margin-top:0px;margin-left:80px">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                    </select>
+
+                    </div>
+                    <div style="position:absolute; margin-left:270px; margin-top:105px">
+                        <label for="band"style=" position:absolute; margin-top:30px; margin-left:-550px;margin-right:150px ">genre band</label>
+                    <input 
+                            type="text"
+                            placeholder=""
+                            class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+                            style="height:20px; width:30px position:absolute; margin-top:30px;margin-left:-400px"
+                            />
+                            
+                    </div>
+                    <div style="position:absolute; margin-top:180px; margin-left:-40px;">
+                        <table style="width: 150%; height:200px; border: 2px solid rgb(0, 0, 0);">
+                            <tr style="background-color: blueviolet">
+                                <th>Length of rental/...</th>
+                                <th>band name</th>
+                                <th>genre</th>
+                                <th>price/hour</th>
+                                <th>total</th>
+                            </tr>
+                            <tr style="background-color: aqua">
+                                <td>2</td>
+                                <td>Turbo Distartion</td>
+                                <td>Punk</td>
+                                <td>30.000</td>
+                                <td>60.000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>the dog catch</td>
+                                <td>metal</td>
+                                <td>30.000</td>
+                                <td>90.000</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>kuda jingkrak</td>
+                                <td>renggae</td>
+                                <td>30.000</td>
+                                <td>30.000</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                         
+                    </div>
+                    <div>
+                        <button type="button" class=" rounded-md px-4 py-3" style="position:absolute; margin-top:22%; margin-left:-45%; width:100px; height:30px; color:blue; "> save </button>
+                        <button type="button" class=" rounded-md px-4 py-3" style="position:absolute; margin-top:26%; margin-left:-45%; width:100px; height:30px; color:blue;"> new</button>
+                        <button type="button" class=" rounded-md px-4 py-3" style="position:absolute; margin-top:30%; margin-left:-45%; width:100px; height:30px; color:blue;"> remove</button>
+                        <button type="button" class=" rounded-md px-4 py-3" style="position:absolute; margin-top:34%; margin-left:-45%; width:100px; height:30px; color:blue;"> search </button>
+                        <button type="button" class=" rounded-md px-4 py-3" style="position:absolute; margin-top:38%; margin-left:-45%; width:100px; height:30px; color:blue;"> exit </button>
+                    
+                    </div>
+      </div>
+     </div>
+</body>
+</html>
